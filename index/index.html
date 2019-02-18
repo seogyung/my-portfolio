@@ -17,6 +17,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
+    body{
+        background-color:blanchedalmond;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -48,7 +51,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2% 5% 10% 5%;
+        /*padding: 2% 5% 10% 5%;*/
     }
 
     .index {
@@ -57,7 +60,7 @@
         justify-content: flex-start;
         width: 80%;
         height: auto;
-        font-size: 80px;
+        font-size: 20px;
     }
 
     .snslogo {
@@ -74,8 +77,9 @@
         justify-content: center;
         align-items: center;
         background-color: blueviolet;
-        padding: 5% 100% 0% 100%;
-        font-size: 70px;
+        padding: 5% 5% 0% 5%;
+        width:100%;
+        font-size: 30px;
     }
 
     .profile {
@@ -85,7 +89,6 @@
         width: 20%;
         height: auto;
         padding: 2% 5% 2% 5%;
-    }
     }
 
     .gimseogyung {
@@ -112,19 +115,17 @@
     <br>
     <br>
     <br>
-    <div class="container">
+    <div>
         <div class="menubar row">
-            <div class="col-6 index row">
-                <div>Hu-man project/ </div>
-                <div>Community managing/ </div>
-                <div>Making media/ </div>
-                <div>Just plan/ </div>
+            <div class="index row">
+                <div class="col-3">Hu-man project/ </div>
+                <div class="col-3">Community managing/ </div>
+                <div class="col-3">Making media/ </div>
+                <div class="col-3">Just plan/ </div>
             </div>
             <div class="snslogo">
-                <div class="row">
-                    <div class="col-3"></div><img src="facebooklogo.png">
-                </div>
-                <div class="row"><img src="1instagram.png"> </div>
+                <img src="facebooklogo.png" style="width:50px;height:50px;">
+                <img src="1instagram.png" style="width:50px;height:50px;">
             </div>
         </div>
         <div class="menubarbelow">
@@ -150,7 +151,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
