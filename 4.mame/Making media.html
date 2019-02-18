@@ -13,38 +13,60 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <style>
+    body {
+        background-color: blanchedalmond;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
+        border-top-style: solid;
+        border-top: 1px solid gray;
+        border-right-style: hidden;
+        border-bottom-style: solid;
+        border-bottom: 1px solid gray;
+        border-left-style: hidden;
+        padding: 0% 0% 20% 0%;
+        font-family: "Times New Roman", Times, serif;
     }
 
     .menubar {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        border-top-style: solid;
+        border-top: 1px solid gray;
+        border-right-style: hidden;
+        border-bottom-style: solid;
+        border-bottom: 1px solid gray;
+        border-left-style: hidden;
+        padding: 2% 5% 2% 5%;
     }
 
     .menubarbelow {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /*padding: 2% 5% 10% 5%;*/
     }
 
     .index {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        justify-content: space-between;
-
+        width: 80%;
+        height: auto;
+        font-size: 20px;
     }
 
     .snslogo {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        width: 10%;
+        width: 20%;
         height: auto;
     }
 
@@ -53,6 +75,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: blueviolet;
+        padding: 2% 5% 2% 5%;
+        width: 100%;
+        font-size: 30px;
     }
 
     .makingmedia {
@@ -76,7 +102,6 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 60%;
     }
 
     .picture_link {
@@ -142,26 +167,27 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <br>
     <div class="container">
-        <div class="menubar">
-            <div class="index">
-                <div>Hu-man project/ </div>
-                <div>Community managing/ </div>
-                <div>Making media/ </div>
-                <div>Just plan </div>
+        <div class="menubar row">
+            <div class="index row">
+                <div class="col-3">Hu-man project/ </div>
+                <div class="col-3">Community managing/ </div>
+                <div class="col-3">Making media/ </div>
+                <div class="col-3">Just plan/ </div>
             </div>
-            <div class="snslogo">
-                <div class="col-12"><img src="facebooklogo.png"></div>
-                <div class="col-12"><img src="1instagram.png"></div>
+            <div class="snslogo row">
+                <img src="index/facebooklogo.png" style="width:50px;height:50px;">
+                <img src="index/1instagram.png" style="width:50px;height:50px;">
             </div>
         </div>
-        <div class="menubarbelow">
+        <div class="menubarbelow row">
             <div class="title">
                 <div class="titlename">
-                    <h2>See the unseen</h2>
+                    <h2>See<br>the<br>unseen</h2>
                 </div>
                 <div class="titlecomment">
-                    <h4>a kind of planner</h4>
+                    <h5>a kind of planner</h5>
                 </div>
                 <br>
             </div>
@@ -170,34 +196,47 @@
             <div class="사진">
                 <div class="picture">Picture</div>
                 <div class="picturerf">
-                    <div class="col-6"><img src="4picturere1.jpg"></div>
-                    <div class="col-6"><img src="4picturere2.jpg"></div>
+                    <img src="4picturere1.jpg" style="width:350px;height:200px;">
+                    <img src="4picturere2.jpg" style="width:350px;height:200px;">
                 </div>
                 <div class="picture_link">
-                    <div class="col-6"><img src="4morelink.png"></div>
-                </div>
+                    <img src="4morelink.png" style="width:100px;height:100px"></div>
             </div>
             <div class="디자인">
                 <div class="design">Design</div>
                 <div class="designrf">
-                    <div class="col-6"><img src="4designre1.jpg"></div>
+                    <img src="4designre1.jpg" style="width:300px;height:400px;">
                 </div>
                 <div class="design_link">
-                    <div class="col-6"><img src="4morelink.png"></div>
+                    <img src="4morelink.png" style="width:100px;height:100px;">
                 </div>
             </div>
             <div class="영상">
                 <div class="video">Video</div>
                 <div class="videorf">
-                    <div class="col-6"><img src="4studingfavi.png"></div>
-                </div>
+                    <img src="4studingfavi.png" style="width:300px;height:300px;"></div>
                 <div class="video_link">
-                    <div class="col-6"><img src="4morelink.png"></div>
-                </div>
+                    <img src="4morelink.png" style="width:100px;height:100px;"></div>
             </div>
+
         </div>
     </div>
-    <script src="" async defer></script>
+    </div>
+
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
