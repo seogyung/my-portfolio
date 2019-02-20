@@ -18,8 +18,7 @@
 </head>
 <style>
     body {
-        background-color:white;
-        height:1350px;
+        background-color: white;
     }
 
     .container {
@@ -53,7 +52,6 @@
         flex-direction: column;
         align-items: center;
         font-family: "Times New Roman", Times, serif;
-        
         /*padding: 2% 5% 10% 5%;*/
     }
 
@@ -80,109 +78,64 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:navy;
+        background-color: navy;
         padding: 2% 5% 2% 5%;
         width: 100%;
         font-size: 10px;
         font-family: "Times New Roman", Times, serif;
-        color:white;
+        color: white;
     }
 
-    .makingmedia {
+    .communitymanager {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        margin: 5% 10% 5% 10%;
         font-family: "Times New Roman", Times, serif;
+        justify-content: space-around;
         border-bottom: 1px solid gray;
         border-left-style: hidden;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Times New Roman', Times, serif;
     }
 
-    .사진 {
+    .review1 {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 3px 100px 3px 100px;
+        border-style: outset;
+        border-bottom-color: navy;
+        border-right-color: navy;
     }
 
-    .picture {
+    .re1name {
         display: flex;
-        justify-content: center;
-        width: 20%;
-        font-size:20px;
-        margin-left: 5px;
-        margin-right: 5px;
+        justify-content: space-between;
     }
 
-    .picturerf {
+    .re1picture {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 60%;
-        margin: 5px;
     }
 
-    .picture_link {
+    .review2 {
         display: flex;
-        justify-content: center;
-        width: 20%;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 3px 100px 3px 100px;
+        border-style: outset;
+        border-bottom-color: navy;
+        border-right-color: navy;
     }
 
-    .디자인 {
+    .re2name {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .design {
-        display: flex;
-        justify-content: center;
-        width: 20%;
-        background-color: blue;
-        font-size:20px;
-    }
-
-    .designrf {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 60%;
-        margin: 5px;
     }
 
-    .design_link {
+    .re2picture {
         display: flex;
-        justify-content: center;
-        width: 20%;
-    }
-
-    .영상 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .video {
-        display: flex;
-        justify-content: center;
-        width: 20%;
-        font-size:20px;
-    }
-
-    .videorf {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 60%;
-        margin: 5px;
-    }
-
-    .video_link {
-        display: flex;
-        justify-content: center;
-        width: 20%;
     }
 </style>
 
@@ -215,28 +168,16 @@
             <br>
         </div>
     </div>
-    <div class="makingmedia">
-        <div class="사진">
-            <div class="picture">Picture</div>
-            <div class="picturerf">
-                <img src="4picturere1.jpg" style="width:200px;height:200px;">
-                <img src="4picturere2.jpg" style="width:200px;height:200px;">
-                <img src="4picturere3.jpg" style="width:200px;height:200px;">
-                <img src="4picturere4.jpg" style="width:200px;height:200px;">
-            </div>
-            <div class="picture_link">
-                <img src="4morelink.png" style="width:70px;height:70px"></div>
+    <div class="communitymanager">
+        <div class="review1">
+            <div class="re1name">[18.08.29] Wanual<br> Opening Party</div>
+            <div class="re1picture"><img src="re1picture.jpg" style="width:250px;height:250px;"></div>
+            <div class="re1link"></div>
         </div>
-        <div class="디자인">
-            <div class="design">Design</div>
-            <div class="designrf">
-                <img src="4designre1.jpg" style="width:300px;height:400px;">
-            </div>
-        </div>
-        <div class="영상">
-            <div class="video">Video</div>
-            <div class="videorf">
-                <img src="4videore1.png" style="width:400px;height:250px;"></div>
+        <div class="review2">
+            <div class="re2name">[19.02.06] HeyJoyce<br>커뮤니티 매니저로 살기</div>
+            <div class="re2picture"><img src="re2picture.jpg" style="width:250px;height:250px;"></div>
+            <div class="re2link"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
