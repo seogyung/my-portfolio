@@ -18,21 +18,11 @@
 </head>
 <style>
     body {
-        background-color:white;
-        height:1350px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        border-top-style: solid;
-        border-top: 1px solid gray;
-        border-right-style: hidden;
-        border-bottom-style: solid;
+        background-color: white;
+        height:100%;
         border-bottom: 1px solid gray;
         border-left-style: hidden;
-        padding: 0% 0% 20% 0%;
-        font-family: "Times New Roman", Times, serif;
+        margin-bottom: 10%;
     }
 
     .menubar {
@@ -41,8 +31,6 @@
         border-top-style: solid;
         border-top: 1px solid gray;
         border-right-style: hidden;
-        border-bottom-style: solid;
-        border-bottom: 1px solid gray;
         border-left-style: hidden;
         padding: 2% 5% 2% 5%;
         font-family: "Times New Roman", Times, serif;
@@ -53,17 +41,17 @@
         flex-direction: column;
         align-items: center;
         font-family: "Times New Roman", Times, serif;
-        
+
         /*padding: 2% 5% 10% 5%;*/
     }
 
-    .index {
+    .indexrow {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         width: 80%;
         height: auto;
-        font-size: 15px;
+        font-size: 20px;
         font-family: "Times New Roman", Times, serif;
     }
 
@@ -80,37 +68,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:navy;
+        background-color: navy;
         padding: 2% 5% 2% 5%;
         width: 100%;
         font-size: 10px;
         font-family: "Times New Roman", Times, serif;
-        color:white;
+        color: white;
     }
 
     .makingmedia {
         display: flex;
         flex-direction: column;
         font-family: "Times New Roman", Times, serif;
-        border-bottom: 1px solid gray;
-        border-left-style: hidden;
-        padding-bottom: 50px;
+        margin: 5% 10% 5% 10%;
     }
 
     .사진 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 10px;
     }
 
     .picture {
         display: flex;
         justify-content: center;
         width: 20%;
-        font-size:20px;
-        margin-left: 5px;
-        margin-right: 5px;
+        font-size: 20px;
     }
 
     .picturerf {
@@ -118,7 +101,6 @@
         flex-direction: row;
         justify-content: center;
         width: 60%;
-        margin: 5px;
     }
 
     .picture_link {
@@ -131,7 +113,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 10px;
     }
 
     .design {
@@ -139,7 +120,7 @@
         justify-content: center;
         width: 20%;
         background-color: blue;
-        font-size:20px;
+        font-size: 20px;
     }
 
     .designrf {
@@ -161,14 +142,13 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 10px;
     }
 
     .video {
         display: flex;
         justify-content: center;
         width: 20%;
-        font-size:20px;
+        font-size: 20px;
     }
 
     .videorf {
@@ -193,15 +173,17 @@
     <br>
 
     <div class="menubar row">
-        <div class="index row">
+        <div class="indexrow">
             <div class="col-3">Hu-man project/ </div>
             <div class="col-3">Community managing/ </div>
             <div class="col-3">Making media/ </div>
             <div class="col-3">Just plan/ </div>
         </div>
         <div class="snslogo row">
-            <img src="../index/facebooklogo.png" style="width:50px;height:50px;">
-            <img src="../index/1instagram.png" style="width:50px;height:50px;">
+            <a href="https://www.facebook.com/profile.php?id=100009078718074"><img src="../index/facebooklogo.png"
+                    style="width:50px;height:50px;"></a>
+            <a href="https://www.instagram.com/photo_by_callipsso/"><img src="../index/1instagram.png"
+                    style="width:50px;height:50px;"></a>
         </div>
     </div>
     <div class="menubarbelow row">
@@ -212,7 +194,6 @@
             <div class="titlecomment">
                 <h5>a kind of planner</h5>
             </div>
-            <br>
         </div>
     </div>
     <div class="makingmedia">

@@ -19,29 +19,19 @@
 <style>
     body {
         background-color: white;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        border-top-style: solid;
-        border-top: 1px solid gray;
-        border-right-style: hidden;
-        border-bottom-style: solid;
+        height: 100%;
         border-bottom: 1px solid gray;
         border-left-style: hidden;
-        padding: 0% 0% 20% 0%;
-        font-family: "Times New Roman", Times, serif;
+        margin-bottom: 10%;
     }
 
     .menubar {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         border-top-style: solid;
         border-top: 1px solid gray;
         border-right-style: hidden;
-        border-bottom-style: solid;
-        border-bottom: 1px solid gray;
         border-left-style: hidden;
         padding: 2% 5% 2% 5%;
         font-family: "Times New Roman", Times, serif;
@@ -55,13 +45,13 @@
         /*padding: 2% 5% 10% 5%;*/
     }
 
-    .index {
+    .indexrow {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         width: 80%;
         height: auto;
-        font-size: 15px;
+        font-size: 20px;
         font-family: "Times New Roman", Times, serif;
     }
 
@@ -92,9 +82,6 @@
         margin: 5% 10% 5% 10%;
         font-family: "Times New Roman", Times, serif;
         justify-content: space-around;
-        border-bottom: 1px solid gray;
-        border-left-style: hidden;
-        padding-bottom: 100px;
         font-family: 'Noto Sans KR', sans-serif;
         font-family: 'Times New Roman', Times, serif;
     }
@@ -111,11 +98,7 @@
 
     .re1name {
         display: flex;
-        justify-content: space-between;
-    }
-
-    .re1picture {
-        display: flex;
+        justify-content: center;
     }
 
     .review2 {
@@ -131,11 +114,6 @@
     .re2name {
         display: flex;
         justify-content: center;
-        align-items: center;
-    }
-
-    .re2picture {
-        display: flex;
     }
 </style>
 
@@ -146,15 +124,17 @@
     <br>
 
     <div class="menubar row">
-        <div class="index row">
+        <div class="indexrow">
             <div class="col-3">Hu-man project/ </div>
             <div class="col-3">Community managing/ </div>
             <div class="col-3">Making media/ </div>
             <div class="col-3">Just plan/ </div>
         </div>
         <div class="snslogo row">
-            <img src="../index/facebooklogo.png" style="width:50px;height:50px;">
-            <img src="../index/1instagram.png" style="width:50px;height:50px;">
+            <a href="https://www.facebook.com/profile.php?id=100009078718074"><img src="../index/facebooklogo.png"
+                    style="width:50px;height:50px;"></a>
+            <a href="https://www.instagram.com/photo_by_callipsso/"><img src="../index/1instagram.png"
+                    style="width:50px;height:50px;"></a>
         </div>
     </div>
     <div class="menubarbelow row">
@@ -165,17 +145,16 @@
             <div class="titlecomment">
                 <h5>a kind of planner</h5>
             </div>
-            <br>
         </div>
     </div>
     <div class="communitymanager">
         <div class="review1">
-            <div class="re1name">[18.08.29] Wanual<br> Opening Party</div>
+            <div class="re1name">Wanual<br> Opening Party<br>[18.08.29] </div>
             <div class="re1picture"><img src="re1picture.jpg" style="width:250px;height:250px;"></div>
             <div class="re1link"></div>
         </div>
         <div class="review2">
-            <div class="re2name">[19.02.06] HeyJoyce<br>커뮤니티 매니저로 살기</div>
+            <div class="re2name">HeyJoyce<br>커뮤니티 매니저로 살기<br>[19.02.06] </div>
             <div class="re2picture"><img src="re2picture.jpg" style="width:250px;height:250px;"></div>
             <div class="re2link"></div>
         </div>

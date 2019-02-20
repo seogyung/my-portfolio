@@ -18,9 +18,14 @@
 </head>
 <style>
     body {
-        background-color: blanchedalmond;
-        height:1350px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        border-left-style: hidden;
+        margin-bottom: 10%;
     }
+
     .menubar {
         display: flex;
         flex-direction: row;
@@ -37,15 +42,13 @@
         align-items: center;
         border-right-style: hidden;
         border-left-style: hidden;
-        border-bottom-style: solid;
-        border-bottom: 1px solid gray;
         /*padding: 2% 5% 10% 5%;*/
     }
 
-    .index {
+    .indexrow {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         width: 80%;
         height: auto;
         font-size: 20px;
@@ -65,11 +68,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: blueviolet;
+        background-color: navy;
         padding: 2% 5% 2% 5%;
         width: 100%;
-        font-size: 30px;
+        font-size: 10px;
         font-family: "Times New Roman", Times, serif;
+        color: white;
     }
 
     .profile {
@@ -87,7 +91,7 @@
         justify-content: center;
         padding: 2% 5% 2% 5%;
         font-size: 50px;
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     .myintroduce {
@@ -104,18 +108,20 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <br>
+    <br>
     <div>
         <div class="menubar">
-            <div class="index row">
+            <div class="indexrow">
                 <div class="col-3">Hu-man project/ </div>
                 <div class="col-3">Community managing/ </div>
                 <div class="col-3">Making media/ </div>
                 <div class="col-3">Just plan/ </div>
             </div>
-            <div class="snslogo">
-                <img src="index/facebooklogo.png" style="width:50px;height:50px;">
-                <img src="index/1instagram.png" style="width:50px;height:50px;">
+            <div class="snslogo row">
+                <a href="https://www.facebook.com/profile.php?id=100009078718074"><img src="../index/facebooklogo.png"
+                        style="width:50px;height:50px;"></a>
+                <a href="https://www.instagram.com/photo_by_callipsso/"><img src="../index/1instagram.png"
+                        style="width:50px;height:50px;"></a>
             </div>
         </div>
         <div class="menubarbelow">
@@ -126,15 +132,15 @@
                 <div class="titlecomment">
                     <h5>a kind of planner</h5>
                 </div>
-                <br>
             </div>
             <div class="profile">
-                <img src="index/1profile.jpg">
+                <img src="../index/1profile.jpg" style="width:300px;height:300px;">
             </div>
             <br>
             <div class="Gimseogyung">김서경</div>
             <div class="myintroduce">
                 <div>1996~</div>
+                <div>Local : Jeonju</div>
                 <div>Hu-man project manager</div>
                 <div>Community planner</div>
             </div>
