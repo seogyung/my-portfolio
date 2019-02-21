@@ -50,7 +50,7 @@
     .indexrow {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content:space-around;
         width: 80%;
         height: auto;
         font-size: 20px;
@@ -76,7 +76,6 @@
         font-size: 10px;
         font-family: "Times New Roman", Times, serif;
         color: white;
-        font-weight: bold;
     }
 
     .humanproject {
@@ -142,6 +141,24 @@
         flex-direction: row;
         font-family: "Times New Roman", Times, serif;
     }
+
+    .titlename_link {
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+    }
+
+    .titlename_link:hover {
+        text-decoration: none;
+        background-color: white;
+        color: black !important;
+    }
+
+    .titlename_link:visited {
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+    }
 </style>
 <style type="text/css">
     a:link {
@@ -175,15 +192,15 @@
     <div class="menubar row">
         <div class="indexrow">
             <a href="hu-man project.html">
-                <div class="col-3">Hu-man project/ </div>
+                <div class>Hu-man project/</div>
             </a>
             <a href="../3.community/communitymanager.html">
-                <div class="col-3">Community managing/ </div>
+                <div class>Community managing/</div>
             </a>
             <a href="../4.mame/Making media.html">
-                <div class="col-3">Making media/ </div>
+                <div class>Making media/</div>
             </a>
-            <div class="col-3">Just plan/ </div>
+            <div class>Just plan/</div>
         </div>
         <div class="snslogo row">
             <a href="https://www.facebook.com/profile.php?id=100009078718074"><img src="../index/facebooklogo.png"
@@ -195,8 +212,9 @@
     <div class="menubarbelow row">
         <div class="title">
             <div class="titlename">
-                <h2>See<br>the<br>unseen</h2>
-            </div>
+                <a class="titlename_link" href="../index.html">
+                    See<br>the<br>unseen
+            </div></a>
             <div class="titlecomment">
                 <h5>a kind of planner</h5>
             </div>
