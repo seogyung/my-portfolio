@@ -98,7 +98,7 @@
         font-size: 15px;
         font-family: "Times New Roman", Times, serif;
         font-family: 'Noto Sans KR', sans-serif;
-        
+
     }
 
     .titlename_link {
@@ -141,6 +141,42 @@
         background-color: yellow;
         color: black;
     }
+
+    @media screen and (max-width:576px) {
+        .menubar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .indexrow {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width:576px) and (max-width:992px) {
+        .menubar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .indexrow {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        .menubar {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .indexrow {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 </style>
 
 <body>
@@ -150,6 +186,10 @@
     <br>
     <div>
         <div class="menubar">
+            <div class="infinite"><a
+                    href="file:///C:/Users/kskji/OneDrive/%EB%AC%B8%EC%84%9C/GitHub/my-portfolio/index.html"><img
+                        src="navyinti.png" width:20px; height:20px;></a>
+            </div>
             <div class="indexrow">
                 <a href="2.human/hu-man project.html">
                     <div class>Hu-man project/</div>
@@ -168,6 +208,7 @@
                 <a href="https://www.instagram.com/photo_by_callipsso/"><img src="index/1instagram.png"
                         style="width:50px;height:50px;margin:0px 15px 0px 0px;"></a>
             </div>
+
         </div>
         <div class="menubarbelow">
             <div class="title">
